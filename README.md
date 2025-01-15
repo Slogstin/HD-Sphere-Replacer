@@ -1,5 +1,5 @@
 # Description
-This Addon lets you replace Soul, Mega and Ivuln spheres with weapons. Intended for generous maps or those people that just don't want them (me).
+This Addon lets you replace Soul, Mega and Invuln spheres with weapons. Intended for generous maps or those people that just don't want them (me).
 Only requires [Hideous Destructor](https://codeberg.org/mc776/HideousDestructor), duh.
 
 The CVar is `MagicBallReplacement` and it goes from 0 to 3.
