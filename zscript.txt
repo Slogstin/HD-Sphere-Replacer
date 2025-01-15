@@ -1,0 +1,61 @@
+version "4.12"
+
+class BallHandler : EventHandler {
+
+//	int alreadyspawned;
+//	int failspawn;
+
+	override void CheckReplacement(ReplaceEvent e) {
+		if (MagicBallReplacement==3) {
+	//	return;
+		switch (e.Replacee.GetClassName()) {
+			case 'HDSoulSphere' :
+				e.Replacement = "SuperShotgun";
+				
+				break;
+			case 'HDMegasphere' :
+				e.Replacement = "Chaingun";
+				
+				break;
+			case 'HDInvulnerabilitySphere' :
+				e.Replacement = "RocketLauncher";
+				
+				break;
+			}
+		}
+		if (MagicBallReplacement==2) {
+	//	return;
+		switch (e.Replacee.GetClassName()) {
+			case 'HDSoulSphere' :
+				if (random(0, 3)) {e.Replacement = "SuperShotgun";}
+				
+				break;
+			case 'HDMegasphere' :
+				if (random(0, 3)) {e.Replacement = "Chaingun";}
+				
+				break;
+			case 'HDInvulnerabilitySphere' :
+				if (random(0, 3)) {e.Replacement = "RocketLauncher";}
+				
+				break;
+			}
+		}
+		if (MagicBallReplacement==1) {
+	//	return;
+		switch (e.Replacee.GetClassName()) {
+			case 'HDSoulSphere' :
+				if (!random(0, 1)) {e.Replacement = "SuperShotgun";}
+				
+				break;
+			case 'HDMegasphere' :
+				if (!random(0, 1)) {e.Replacement = "Chaingun";}
+				
+				break;
+			case 'HDInvulnerabilitySphere' :
+				if (!random(0, 1)) {e.Replacement = "RocketLauncher";}
+				
+				break;
+			}
+		}
+	}
+}

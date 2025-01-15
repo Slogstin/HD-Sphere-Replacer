@@ -1,0 +1,30 @@
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "Sphere Replacer", "MagicBallMenu"
+}
+
+AddOptionMenu "HDAddonMenu"
+{
+	Submenu "Sphere Replacer", "MagicBallMenu"
+}
+
+OptionValue "BallChance"
+{
+    0,		"Off"
+    1,		"50%"
+	2,		"75%"
+	3,		"All"
+}
+
+OptionMenu "MagicBallMenu"
+{
+	Title "Sphere Replacer"
+	
+	StaticText ""
+	Option "Magic Sphere Replacement", "MagicBallReplacement", "BallChance"
+	StaticText ""
+	StaticText "Replaces Soul, Mega and Invuln Spheres with Weapon Drops.", "White"
+	StaticText ""
+	StaticText "Enable this if you want them to be less common,", "White"
+	StaticText "or if you just don't like them and can do without.", "White"
+}
